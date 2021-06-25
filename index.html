@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Testimonial</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="pt-testimonail-header">
+                <h1>What our Customers Say</h1>
+            </div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="pt-testimonail">
+                    <div class="pt-testimonial-user-avatar">
+                        <img src="./images/photo-1589386417686-0d34b5903d23.jpg" alt="testimonial-img">
+                    </div>
+                    <h2 class="pt-testimonial-title">Pravin Jain</h2>
+                    <p class="pt-testimonial-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eos, placeat earum magni illo quia, accusantium beatae ullam 
+                        temporibus repellat sapiente. Sunt, minus. Repellendus.
+                    </p>
+                </div>
+            </div> <!-- owl-carousel closign -->
+            
+        </section>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: false,
+            margin: 40,
+            nav: false,
+            dots: true,
+            responsiveClass: true,
+            responsive: {
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+            }
+        });
+    </script>
+</body>
+</html>

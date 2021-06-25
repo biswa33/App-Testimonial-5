@@ -1,0 +1,115 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*  { box-sizing: border-box; }
+    
+:root{
+  --primary-color:     #031F4B;
+  --secondary-color:   #00B5BD;
+  --light-color :      #F4F7F6;
+  --dark-color:        #404041;
+  --extra-light:       #ccc8c4;
+
+  --base-color:        #ffffff;
+  --black_color:       #000000;
+  --gray-color:        #999999;
+  --offwhite       :   #f6f6f6;
+  --section_bg:        #f4f4f4;
+  --border_color:      #edeff2;
+  --title-color    :   #2a2a2a;
+
+  --font_1 :'Montserrat', sans-serif;   /* //Heading */
+}
+
+body{
+	margin:0;
+	padding: 0;
+	color: var(--dark-color);
+	font-size: 1rem;
+	font-family: var(--font_1);
+}
+
+.container { padding: 60px 0; width: 80%; margin:0 auto; }
+
+.pt-testimonail-header {
+  height: 200px;
+  background: var(--primary-color);
+}
+
+h1 {
+  margin: 0;
+  padding-top: 50px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* h1::before, h1::after {
+  content: '';
+  height: 4px;
+  display: inline-block;
+  border-left: 100px solid var(--secondary-color);
+  vertical-align: middle;
+} */
+
+.pt-testimonial-user-avatar {
+  height: 140px;
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  padding: 4px;
+  background: var(--base-color);
+  object-fit: cover;
+}
+
+h2 { text-align: center; font-size: 1.2rem; font-weight: 500; }
+
+h2::after { 
+  content: '';
+  display: block;
+  width: 26px;
+  border-bottom: 3px solid var(--secondary-color);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+.pt-testimonial-title {
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.6;
+  font-size: 1.025rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.pt-testimonial-description {
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.pt-testimonail {
+  /* position: relative;
+  bottom: 75px;
+  z-index: 3; */
+  transform: translateY(-70px);
+}
+
+/* Overriding the owl carousel 2 class */
+.owl-carousel .owl-stage-outer {
+  overflow: initial !important;
+  overflow-x: clip !important;
+}
+
+@media screen and (max-width: 320px) {
+  h1 { font-size: 1.3rem; }
+}
